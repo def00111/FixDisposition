@@ -1,0 +1,20 @@
+{
+  "description": "This add-on fixes some bugs with the Content-Disposition header.",
+  "manifest_version": 2,
+  "name": "FixDisposition",
+  "version": "1.1.1",
+
+  "applications": {
+    "gecko": {
+      "id": "{d534ba65-4cbb-41e0-9141-9f8d00373d93}"
+    }
+  },
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
